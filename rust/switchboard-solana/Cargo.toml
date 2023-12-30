@@ -26,14 +26,14 @@ all = ["secrets", "macros", "ipfs"]
 
 [dependencies]
 anchor-spl = "0.29.0"
-solana-program = "^1.16"
-solana-address-lookup-table-program = "^1.16"
+solana-program = "^1.17"
+solana-address-lookup-table-program = "^1.17"
 rust_decimal = "^1"
 bytemuck = "^1"
 superslice = "1"
 log = { version = "0.4", features = ["kv_unstable", "kv_unstable_std"] }
 kv-log-macro = "1.0"
-switchboard-solana-macros = { version = "0.2.1", path = "../switchboard-solana-macros", optional = true, features = [
+switchboard-solana-macros = { version = "0.2.1", optional = true, features = [
     "dotenv",
 ] }
 
